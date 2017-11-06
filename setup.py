@@ -14,7 +14,7 @@ setuptools.setup(
     license='MIT',
     url='https://github.com/sxjscience/HKO-7',
     install_requires=['numpy', 'scipy', 'matplotlib', 'pandas', 'moviepy', 'numba',
-                      'pillow', 'six', 'easydict', 'pyyaml', 'libtmux'],
+                      'pillow', 'six', 'easydict', 'pyyaml'],
     classifiers=['Development Status :: 2 - Pre-Alpha',
                  'Intended Audience :: Science/Research',
                  'License :: OSI Approved :: MIT License',
