@@ -1,0 +1,84 @@
+MOVINGMNIST:
+  DISTRACTOR_NUM: 0
+  VELOCITY_LOWER: 0.0
+  VELOCITY_UPPER: 3.6
+  SCALE_VARIATION_LOWER: 0.9090909090909091
+  SCALE_VARIATION_UPPER: 1.1
+  ROTATION_LOWER: -30
+  ROTATION_UPPER: 30
+  ILLUMINATION_LOWER: 0.6
+  ILLUMINATION_UPPER: 1.0
+  DIGIT_NUM: 3
+  IN_LEN: 10
+  OUT_LEN: 10
+  IMG_SIZE: 64
+MODEL:
+  CNN_ACT_TYPE: leaky
+  RNN_ACT_TYPE: leaky
+  FRAME_STACK: 1
+  FRAME_SKIP: 1
+  IN_LEN: 10
+  OUT_LEN: 10
+  OUT_TYPE: direct
+  TRAJRNN:
+    INIT_GRID: true
+  ENCODER_FORECASTER:
+    HAS_MASK: false
+    FEATMAP_SIZE: [64, 32, 16]
+    FIRST_CONV: [16, 3, 1, 1]
+    LAST_DECONV: [16, 3, 1, 1]
+    DOWNSAMPLE:
+    - [3, 2, 1]
+    - [3, 2, 1]
+    UPSAMPLE:
+    - [4, 2, 1]
+    - [4, 2, 1]
+    RNN_BLOCKS:
+      RES_CONNECTION: true
+      LAYER_TYPE: [TrajGRU, TrajGRU, TrajGRU]
+      STACK_NUM: [1, 1, 1]
+      NUM_FILTER: [64, 96, 96]
+      H2H_KERNEL:
+      - [5, 5]
+      - [5, 5]
+      - [5, 5]
+      H2H_DILATE:
+      - [1, 1]
+      - [1, 1]
+      - [1, 1]
+      I2H_KERNEL:
+      - [3, 3]
+      - [3, 3]
+      - [3, 3]
+      I2H_PAD:
+      - [1, 1]
+      - [1, 1]
+      - [1, 1]
+      L: [17, 17, 17]
+  TRAIN:
+    BATCH_SIZE: 4
+    TBPTT: false
+    OPTIMIZER: adam
+    LR: 0.0001
+    GAMMA1: 0.9
+    BETA1: 0.5
+    EPS: 1.0e-08
+    MIN_LR: 1.0e-06
+    GRAD_CLIP: 1.0
+    WD: 0
+    MAX_ITER: 200000
+    LR_DECAY_ITER: 20000
+    LR_DECAY_FACTOR: 0.7
+  VALID_ITER: 5000
+  SAVE_ITER: 20000
+  TEST:
+    FINETUNE: true
+    MODE: online
+    ONLINE:
+      OPTIMIZER: adam
+      LR: 1.0e-06
+      GAMMA1: 0.9
+      BETA1: 0.5
+      EPS: 1.0e-08
+      GRAD_CLIP: 10.0
+      WD: 0

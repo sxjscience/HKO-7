@@ -1,0 +1,74 @@
+CNN_ACT_TYPE: leaky
+RNN_ACT_TYPE: leaky
+FRAME_STACK: 1
+FRAME_SKIP: 1
+IN_LEN: 5
+OUT_LEN: 20
+OUT_TYPE: direct
+NORMAL_LOSS_GLOBAL_SCALE: 1.0e-05
+USE_BALANCED_LOSS: true
+TEMPORAL_WEIGHT_TYPE: same
+TEMPORAL_WEIGHT_UPPER: 5
+L1_LAMBDA: 1.0
+L2_LAMBDA: 1.0
+GDL_LAMBDA: 0.0
+USE_SEASONALITY: false
+ENCODER_FORECASTER:
+  HAS_MASK: true
+  FEATMAP_SIZE: [96, 32, 16]
+  FIRST_CONV: [8, 7, 5, 1]
+  LAST_DECONV: [8, 7, 5, 1]
+  DOWNSAMPLE:
+  - [5, 3, 1]
+  - [3, 2, 1]
+  UPSAMPLE:
+  - [5, 3, 1]
+  - [4, 2, 1]
+  RNN_BLOCKS:
+    RES_CONNECTION: true
+    LAYER_TYPE: [ConvGRU, ConvGRU, ConvGRU]
+    STACK_NUM: [1, 1, 1]
+    NUM_FILTER: [64, 192, 192]
+    H2H_KERNEL:
+    - [5, 5]
+    - [5, 5]
+    - [3, 3]
+    H2H_DILATE:
+    - [1, 1]
+    - [1, 1]
+    - [1, 1]
+    I2H_KERNEL:
+    - [3, 3]
+    - [3, 3]
+    - [3, 3]
+    I2H_PAD:
+    - [1, 1]
+    - [1, 1]
+    - [1, 1]
+TRAIN:
+  BATCH_SIZE: 4
+  TBPTT: false
+  OPTIMIZER: adam
+  LR: 0.0001
+  GAMMA1: 0.9
+  BETA1: 0.5
+  EPS: 1.0e-08
+  MIN_LR: 1.0e-06
+  GRAD_CLIP: 50.0
+  WD: 0
+  MAX_ITER: 100000
+  LR_DECAY_ITER: 20000
+  LR_DECAY_FACTOR: 0.7
+VALID_ITER: 10000
+SAVE_ITER: 10000
+TEST:
+  FINETUNE: true
+  MODE: online
+  ONLINE:
+    OPTIMIZER: adagrad
+    LR: 0.001
+    GAMMA1: 0.9
+    BETA1: 0.5
+    EPS: 1.0e-06
+    GRAD_CLIP: 50.0
+    WD: 0
