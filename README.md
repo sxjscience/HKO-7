@@ -1,7 +1,7 @@
 About
 -----
 
-Source code for the paper [Deep learning for precipitation nowcasting: A benchmark and a new model](https://arxiv.org/pdf/1706.03458.pdf)
+Source code of the paper [Deep learning for precipitation nowcasting: A benchmark and a new model](https://arxiv.org/pdf/1706.03458.pdf)
 
 If you use the code or find it helpful, please cite the following paper:
 ```
