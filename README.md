@@ -54,7 +54,7 @@ python3 nowcasting/movingmnist_iterator.py
 
 Download the HKO-7 Dataset and Use the Iterator
 -----------------------------------------------
-Please note that our source code does not require HKO-7 Dataset to perform the computation and the dataset may be available only for academic research upon request.   To obtain the HKO-7 dataset (images + masks), please e-mail the following template with the subject "Request for HKO-7 Dataset".   Your request will be duly reviewed based on your provided information on the usages of dataset, and a link to download the dataset will be provided once the application is approved.
+Please note that our source code does not require HKO-7 Dataset to perform the computation and the dataset may be available only for academic research upon request. To obtain the HKO-7 dataset (images + masks), please e-mail the following template with the subject "Request for HKO-7 Dataset".   Your request will be duly reviewed based on your provided information on the usages of dataset, and a link to download the dataset will be provided once the application is approved.
 
 ```
 Subject: Request for HKO-7 Dataset
@@ -107,6 +107,8 @@ train_hko_iter = HKOIterator(pd_path=cfg.HKO_PD.RAINY_TRAIN,
 sample_sequence, sample_mask, sample_datetime_clips, new_start =\
             train_hko_iter.sample(batch_size=8)
 ```
+
+If you have not obtained the HKO-7 dataset and just want to run the TrajGRU model, you can comment out the lines in https://github.com/sxjscience/HKO-7/blob/master/nowcasting/config.py#L39-L41 and https://github.com/sxjscience/HKO-7/blob/master/nowcasting/config.py#L49-L51 and run the MovingMNIST++ experiments.
 
 Run the HKO-7 Benchmark Environment
 -----------------------------------
