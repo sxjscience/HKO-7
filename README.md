@@ -55,13 +55,13 @@ python3 nowcasting/movingmnist_iterator.py
 Also, you can view samples of the learned connection structure of different layers in the TrajGRU-L13 model:
 
 - For the encoder, lower-layers will capture lower-level motion features and higher layer will capture some more general motion features.
-   - 1st layer: ![1st Layer of Encoder](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/ebrnn1_link_sample.gif) 
-   - 2nd layer: ![2nd Layer of Encoder](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/ebrnn2_link_sample.gif)
-   - 3rd layer: ![3rd Layer of Encoder](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/ebrnn3_link_sample.gif)
+   - 1st layer: ![](mnist_data/ebrnn1_link_sample.gif) 
+   - 2nd layer: ![](mnist_data/ebrnn2_link_sample.gif)
+   - 3rd layer: ![](mnist_data/ebrnn3_link_sample.gif)
 - For the forecaster, lower-layers will capture lower-level motion features and higher layer will capture some more general motion features. 
-   - 3rd layer: ![3rd Layer of Forecaster](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/fbrnn3_link_sample.gif)
-   - 2nd layer: ![2nd Layer of Forecaster](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/fbrnn2_link_sample.gif)
-   - 1st layer: ![1st Layer of Forecaster](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/fbrnn1_link_sample.gif)
+   - 3rd layer: ![](mnist_data/fbrnn3_link_sample.gif)
+   - 2nd layer: ![](mnist_data/fbrnn2_link_sample.gif)
+   - 1st layer: ![](mnist_data/fbrnn1_link_sample.gif)
    
 
 Download the HKO-7 Dataset and Use the Iterator
@@ -152,7 +152,7 @@ You can refer to the CSI, HSS, B-MSE, B-MAE scores in the saved evaluation file 
 
 Running Experiments in the Paper
 --------------------------------
-Refer to the readme files in https://github.com/sxjscience/HKO-7/tree/master/experiments/hko and https://github.com/sxjscience/HKO-7/tree/master/experiments/movingmnist
+Refer to the [MovingMNIST++ Experiment README](https://github.com/sxjscience/HKO-7/tree/master/experiments/movingmnist) and [HKO-7 Experiment README](https://github.com/sxjscience/HKO-7/tree/master/experiments/hko)
 
 FAQ
 ---
