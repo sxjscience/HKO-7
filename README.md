@@ -56,14 +56,14 @@ Also, you can view samples of the learned connection structure of different laye
 
 - For the encoder, lower-layers will capture lower-level motion features and higher layer will capture some more general motion features. We show one of the learned links for layer1 to layer3.
     
-    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/ebrnn1_link_sample.gif" width="500"/>
-    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/ebrnn2_link_sample.gif" width="500"/>
-    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/ebrnn3_link_sample.gif" width="500"/>
-- For the forecaster, lower-layers will capture lower-level motion features and higher layer will capture some more general motion features. 
+    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/ebrnn1_link_sample.gif" width="300"/>
+    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/ebrnn2_link_sample.gif" width="300"/>
+    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/ebrnn3_link_sample.gif" width="300"/>
+- For the forecaster, lower-layers will capture lower-level motion features and higher layer will capture more general motion patterns. We show one of the learned links for layer3 to layer1.
     
-    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/fbrnn3_link_sample.gif" width="500"/>
-    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/fbrnn2_link_sample.gif" width="500"/>
-    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/fbrnn1_link_sample.gif" width="500"/>
+    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/fbrnn3_link_sample.gif" width="300"/>
+    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/fbrnn2_link_sample.gif" width="300"/>
+    <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/fbrnn1_link_sample.gif" width="300"/>
    
 
 Download the HKO-7 Dataset and Use the Iterator
