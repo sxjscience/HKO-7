@@ -52,6 +52,18 @@ Run the following script to draw a sample from the MovingMNIST++ dataset
 python3 nowcasting/movingmnist_iterator.py
 ```
 
+Also, you can view samples of the learned connection structure of different layers in the TrajGRU-L13 model:
+
+- For the encoder, lower-layers will capture lower-level motion features and higher layer will capture some more general motion features.
+   - 1st layer: ![1st Layer of Encoder](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/ebrnn1_link_sample.gif) 
+   - 2nd layer: ![2nd Layer of Encoder](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/ebrnn2_link_sample.gif)
+   - 3rd layer: ![3rd Layer of Encoder](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/ebrnn3_link_sample.gif)
+- For the forecaster, lower-layers will capture lower-level motion features and higher layer will capture some more general motion features. 
+   - 3rd layer: ![3rd Layer of Forecaster](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/fbrnn3_link_sample.gif)
+   - 2nd layer: ![2nd Layer of Forecaster](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/fbrnn2_link_sample.gif)
+   - 1st layer: ![1st Layer of Forecaster](https://github.com/sxjscience/HKO-7/tree/master/mnist_data/fbrnn1_link_sample.gif)
+   
+
 Download the HKO-7 Dataset and Use the Iterator
 -----------------------------------------------
 Please note that our source code does not require HKO-7 Dataset to perform the computation and the dataset may be available only for academic research upon request. To obtain the HKO-7 dataset (images + masks), please e-mail the following template with the subject "Request for HKO-7 Dataset".   Your request will be duly reviewed based on your provided information on the usages of dataset, and a link to download the dataset will be provided once the application is approved.
