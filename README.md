@@ -54,12 +54,12 @@ python3 nowcasting/movingmnist_iterator.py
 
 Also, you can view samples of the learned connection structure of different layers in the TrajGRU-L13 model:
 
-- For the encoder, lower-layers will capture lower-level motion features and higher layer will capture some more general motion features. We show one of the learned links for layer1 to layer3.
+- For the encoder, lower-layers will capture lower-level motion features and higher layer will capture some more general motion features. We show one of the learned links for layer1, layer2 and layer3 (from left to right).
     
     <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/ebrnn1_link_sample.gif" width="250"/>
     <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/ebrnn2_link_sample.gif" width="250"/>
     <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/ebrnn3_link_sample.gif" width="250"/>
-- For the forecaster, lower-layers will capture lower-level motion features and higher layer will capture more general motion patterns. We show one of the learned links for layer3 to layer1.
+- For the forecaster, higher-layers will generate more global movements and lower layer will generate motions with finer details. We show one of the learned links for layer3, layer2 and layer1 (from left to right).
     
     <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/fbrnn3_link_sample.gif" width="250"/>
     <img src="https://raw.githubusercontent.com/sxjscience/HKO-7/master/mnist_data/fbrnn2_link_sample.gif" width="250"/>
