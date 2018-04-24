@@ -68,24 +68,31 @@ Also, you can view samples of the learned connection structure of different laye
 
 Download the HKO-7 Dataset and Use the Iterator
 -----------------------------------------------
-Please note that our source code does not require HKO-7 Dataset to perform the computation and the dataset may be available only for academic research upon request. To obtain the HKO-7 dataset (images + masks), please e-mail the following template with the subject "Request for HKO-7 Dataset".   Your request will be duly reviewed based on your provided information on the usages of dataset, and a link to download the dataset will be provided once the application is approved.
+Please note that our source code does not require HKO-7 Dataset to perform the computation.
+
+The Hong Kong Observatory (HKO) may provide universities and research institutes the HKO-7 dataset (images + masks) for academic research subject to agreement to the undertaking (HKO-7_Dataset_Undertaking_fillable.pdf) by a faculty or formal member of the institute, e.g. professor, lecturer, researcher.  Any interested person please review the terms and conditions on the undertaking and, if agreeable, fill in the form, sign it and send an email as follow:
 
 ```
 Subject: Request for HKO-7 Dataset
 ----------------------------------
 Name: YOUR NAME
 Institution: YOUR INSTITUTION
-Usage:
-    Briefly explain your usage of the dataset
+Attachment: Completed and Signed Undertaking Form
 Other Information:
     You can include other information if you want.
 ```
 
 Preferred email addresses:(You can also contact anyone in our NIPS2017 paper)
 ```
-Mr Wang-chun Woo:  wcwoo AT hko DOT gov DOT hk
-Mr Wai-kin Wong:  wkwong AT hko DOT gov DOT hk
+Mr WOO Wang-chun:  wcwoo AT hko DOT gov DOT hk
+Mr WONG Wai-kin:  wkwong AT hko DOT gov DOT hk
 ```
+
+The email must be sent from an **official email address** ending with the domain name of the institute.  As we need to remotely establish the identiy of the data requester, we regret for not being able to process requests sent from general email services, e.g. Gmail, Yahoo, iCloud.  If you have difficulty sending official emails, please explain in the email message body.
+
+Interested undergraduate or post-graduate students please ask their supervisors for advice and instructions.
+
+Please allow a few weeks for processing the data request.
 
 After you've downloaded the datasets, extract and put the `radarPNG` or `radarPNG_mask` folders under the `hko_data` folder. To use your own path of `radarPNG` or `radarPNG_mask`, append your paths into the `possible_hko_png_paths` and `possible_hko_mask_paths` in https://github.com/sxjscience/HKO-7/blob/master/nowcasting/config.py.
 ```python
