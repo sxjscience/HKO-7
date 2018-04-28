@@ -22,9 +22,9 @@ Both Windows and Linux are supported.
 
 Install the package
 ```bash
-pip3 install develop
+python3 setup.py develop
 # Use --user if you have no privilege
-pip3 install develop --user
+python3 setup.py develop --user
 ```
 
 You will also need the python plugin of opencv:
