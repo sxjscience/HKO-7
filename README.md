@@ -70,7 +70,7 @@ Download the HKO-7 Dataset and Use the Iterator
 -----------------------------------------------
 Please note that our source code does not require HKO-7 Dataset to perform the computation.
 
-The Hong Kong Observatory (HKO) may provide universities and research institutes the HKO-7 dataset (images + masks) for academic research subject to agreement to the undertaking (HKO-7_Dataset_Undertaking_fillable.pdf) by a faculty or formal member of the institute, e.g. professor, lecturer, researcher.  Any interested person please review the terms and conditions on the undertaking and, if agreeable, fill in the form, sign it and send an email as follow:
+The Hong Kong Observatory (HKO) may provide universities and research institutes the HKO-7 dataset (images + masks) for academic research subject to agreement to the undertaking ([HKO-7_Dataset_Undertaking_fillable.pdf](https://github.com/sxjscience/HKO-7/blob/master/HKO-7_Dataset_Undertaking_fillable.pdf)) by a faculty or formal member of the institute, e.g. professor, lecturer, researcher.  Any interested person please review the terms and conditions on the undertaking and, if agreeable, fill in the form, sign it and send an email as follow:
 
 ```
 Subject: Request for HKO-7 Dataset
