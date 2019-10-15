@@ -82,10 +82,9 @@ Other Information:
     You can include other information if you want.
 ```
 
-Preferred email addresses:(You can also contact anyone in our NIPS2017 paper)
+Preferred email address:(You can also contact anyone in our NIPS2017 paper)
 ```
-Mr WOO Wang-chun:  wcwoo AT hko DOT gov DOT hk
-Mr WONG Wai-kin:  wkwong AT hko DOT gov DOT hk
+swirls@hko.gov.hk
 ```
 
 The email must be sent from an **official email address** ending with the domain name of the institute.  As we need to remotely establish the identiy of the data requester, we regret for not being able to process requests sent from general email services, e.g. Gmail, Yahoo, iCloud.  If you have difficulty sending official emails, please explain in the email message body.
